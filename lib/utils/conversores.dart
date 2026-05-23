@@ -26,3 +26,11 @@ double converterValor(dynamic valor) {
 
   return double.tryParse(textoTratado) ?? 0.0;
 }
+
+int converterHoras(dynamic valor) {
+  if (valor == null) {
+    return 0;
+  }
+
+  return int.tryParse(valor.toString().trim()) ?? 0;
+}
