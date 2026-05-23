@@ -1,5 +1,12 @@
-import 'package:mini_projeto_1_task_report/mini_projeto_1_task_report.dart' as mini_projeto_1_task_report;
+import 'package:mini_projeto_1_task_report/data/dados_tarefas.dart';
+import 'package:mini_projeto_1_task_report/services/tarefa_service.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${mini_projeto_1_task_report.calculate()}!');
+void main() {
+  final tarefas = converterListaMapParaTarefas(dadosTarefas);
+
+  print('=== TAREFAS CONVERTIDAS ===');
+
+  for (final tarefa in tarefas) {
+    tarefa.exibirResumo();
+  }
 }
