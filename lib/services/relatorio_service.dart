@@ -36,3 +36,19 @@ double calcularMediaValoresTarefasPendentes(List<Tarefa> tarefas) {
 
   return total / tarefasPendentes.length;
 }
+
+Map<String, int> calcularHorasPorStatus(List<Tarefa> tarefas) {
+  final Map<String, int> horasPorStatus = {};
+
+  for (final tarefa in tarefas) {
+    final status = tarefa.status;
+
+    if (horasPorStatus.containsKey(status)) {
+      horasPorStatus[status] = horasPorStatus[status]! + tarefa.horas;
+    } else {
+      horasPorStatus[status] = tarefa.horas;
+    }
+  }
+
+  return horasPorStatus;
+}

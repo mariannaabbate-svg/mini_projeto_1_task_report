@@ -39,4 +39,12 @@ void main() {
 
   print('\n=== MÉDIA DAS TAREFAS PENDENTES ===');
   print('Média: R\$ $mediaFormatada');
+
+  final horasPorStatus = calcularHorasPorStatus(tarefas);
+
+  print('\n=== TOTAL DE HORAS POR STATUS ===');
+
+  horasPorStatus.forEach((status, horas) {
+    print('${status.toUpperCase()}: $horas horas');
+  });
 }
