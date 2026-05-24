@@ -27,4 +27,10 @@ void main() {
       tarefa.exibirResumo();
     }
   }
+
+  final totalConcluidas = somarValoresTarefasConcluidas(tarefas);
+  final totalFormatado = totalConcluidas.toStringAsFixed(2).replaceAll('.', ',');
+
+  print('\n=== TOTAL DAS TAREFAS CONCLUÍDAS ===');
+  print('Total: R\$ $totalFormatado');
 }

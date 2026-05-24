@@ -8,3 +8,15 @@ List<Tarefa> filtrarTarefasPorStatus(
     return tarefa.status.toLowerCase().trim() == status.toLowerCase().trim();
   }).toList();
 }
+
+double somarValoresTarefasConcluidas(List<Tarefa> tarefas) {
+  final tarefasConcluidas = filtrarTarefasPorStatus(tarefas, 'concluida');
+
+  double total = 0.0;
+
+  for (final tarefa in tarefasConcluidas) {
+    total += tarefa.valor;
+  }
+
+  return total;
+}
