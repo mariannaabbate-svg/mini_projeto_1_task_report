@@ -33,4 +33,10 @@ void main() {
 
   print('\n=== TOTAL DAS TAREFAS CONCLUÍDAS ===');
   print('Total: R\$ $totalFormatado');
+
+  final mediaPendentes = calcularMediaValoresTarefasPendentes(tarefas);
+  final mediaFormatada = mediaPendentes.toStringAsFixed(2).replaceAll('.', ',');
+
+  print('\n=== MÉDIA DAS TAREFAS PENDENTES ===');
+  print('Média: R\$ $mediaFormatada');
 }
