@@ -246,7 +246,7 @@ refactor: aplica encapsulamento na classe tarefa
 
 ## Links da entrega
 
-- Repositório GitHub: será adicionado ao final.
+- Repositório GitHub: https://github.com/mariannaabbate-svg/mini_projeto_1_task_report
 - Kanban: será adicionado ao final.
 - Vídeo de apresentação: será adicionado ao final.
 
