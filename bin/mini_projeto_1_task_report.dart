@@ -55,4 +55,12 @@ void main() {
   for (final tarefa in tarefasIncompletas) {
     tarefa.exibirResumo();
   }
+
+  final statusUnicos = listarStatusUnicos(tarefas);
+
+  print('\n=== STATUS ÚNICOS ===');
+
+  for (final status in statusUnicos) {
+    print(status);
+  }
 }

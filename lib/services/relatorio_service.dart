@@ -63,3 +63,13 @@ List<Tarefa> identificarTarefasIncompletas(List<Tarefa> tarefas) {
         tarefa.horas == 0;
   }).toList();
 }
+
+Set<String> listarStatusUnicos(List<Tarefa> tarefas) {
+  final Set<String> statusUnicos = {};
+
+  for (final tarefa in tarefas) {
+    statusUnicos.add(tarefa.status);
+  }
+
+  return statusUnicos;
+}
