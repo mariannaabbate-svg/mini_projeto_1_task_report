@@ -52,3 +52,14 @@ Map<String, int> calcularHorasPorStatus(List<Tarefa> tarefas) {
 
   return horasPorStatus;
 }
+
+List<Tarefa> identificarTarefasIncompletas(List<Tarefa> tarefas) {
+  return tarefas.where((tarefa) {
+    return tarefa.titulo == 'Não informado' ||
+        tarefa.responsavel == 'Não informado' ||
+        tarefa.status == 'Não informado' ||
+        tarefa.prioridade == 'Não informado' ||
+        tarefa.valor == 0.0 ||
+        tarefa.horas == 0;
+  }).toList();
+}

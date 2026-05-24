@@ -47,4 +47,12 @@ void main() {
   horasPorStatus.forEach((status, horas) {
     print('${status.toUpperCase()}: $horas horas');
   });
+
+  final tarefasIncompletas = identificarTarefasIncompletas(tarefas);
+
+  print('\n=== TAREFAS INCOMPLETAS ===');
+
+  for (final tarefa in tarefasIncompletas) {
+    tarefa.exibirResumo();
+  }
 }
