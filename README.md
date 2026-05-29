@@ -247,9 +247,9 @@ refactor: aplica encapsulamento na classe tarefa
 ## Links da entrega
 
 - Repositório GitHub: https://github.com/mariannaabbate-svg/mini_projeto_1_task_report
-- Kanban: será adicionado ao final.
-- Vídeo de apresentação: será adicionado ao final.
+- Kanban: https://trello.com/invite/b/6a10e7d00d80d30d3ad54c72/ATTI60e034ebeb02f36b9b892d4075d60b7fFD726961/mini-projeto-avaliativo
+- Vídeo de apresentação: https://drive.google.com/file/d/1KFbmFWyPlnCngMjvFLys92Tf7PYPgBKp/view?usp=sharing
 
 ## Status do projeto
 
-Em desenvolvimento.
+Projeto finalizado e entregue.
